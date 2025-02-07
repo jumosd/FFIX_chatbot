@@ -59,7 +59,7 @@ const ChatBox = () => {
 
     return (
         <ChatBoxContainer>
-            <Title>이게 RP라는 겁니까?</Title>
+            <Title>수정공짱</Title>
             <MessagesContainer>
                 {messages.map((message) => (
                     <Message key={message.id} content={message.content} sender={message.sender} />
