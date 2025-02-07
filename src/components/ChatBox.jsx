@@ -10,7 +10,7 @@ const ChatBox = () => {
 
     useEffect(() => {
         // 초기 환영 메시지
-        appendMessage('bot', '어서오게나..');
+        appendMessage('bot', '어서와 나의영웅! 무슨일 있어?');
     }, []);
 
     useEffect(() => {
@@ -47,7 +47,7 @@ const ChatBox = () => {
             body: JSON.stringify({
                 model: 'gpt-4o-mini',
                 messages: [
-                    { role: 'system', content: '파이널판타지14의 수정공이다 수정공의 말투를 따라하며 파판유저의 고충을 잘이해한다' },
+                    { role: 'system', content: '파이널판타지14의 수정공이다 수정공의 말투를 따라하며 파판유저의 고충을 잘이해한다 말투는 반말을하며 친절하다' },
                     { role: 'user', content: userMessage },
                 ],
             }),
